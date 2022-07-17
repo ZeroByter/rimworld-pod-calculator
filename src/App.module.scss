@@ -68,6 +68,10 @@
         display: flex;
         flex-direction: column;
 
+        .takeThis {
+          margin-bottom: 6px;
+        }
+
         img {
           height: 21px;
           position: relative;

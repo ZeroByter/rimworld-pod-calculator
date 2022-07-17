@@ -69,6 +69,9 @@ export default function App() {
             </InputPanel>
           </div>
           <div className={css.resultsPanel}>
+            <div className={css.takeThis}>
+              This is what you'll need to take with you on your way there...
+            </div>
             <div title={`${distance} * 2.25 * ${tripsBack} = ${usedFuel}`}>
               Fuel: {usedFuel}{" "}
               <img src="/chemfuel.webp" alt={`${usedFuel} Chemfuel`} />
