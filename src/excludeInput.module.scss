@@ -1,0 +1,64 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .title {
+    display: flex;
+    gap: 10px;
+
+    .help {
+      position: relative;
+
+      .tooltip {
+        position: absolute;
+        right: -2px;
+        bottom: -2px;
+        transform: translate(100%, 100%);
+        border: 1px solid #616C7A;
+        background: #15191D;
+        width: max-content;
+        max-width: 400px;
+        padding: 6px;
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      &:hover {
+        .tooltip {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  .inputs {
+    display: flex;
+    gap: 4px;
+
+    button {
+      padding: 0px;
+      background: none;
+      border: none;
+      border: 3px solid transparent;
+
+      .crossedOut {
+        width: 0px;
+        position: absolute;
+      }
+
+      img {
+        height: 32px;
+      }
+
+      &[data-selected="true"] {
+        border-color: white;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+}
