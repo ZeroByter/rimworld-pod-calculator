@@ -21,9 +21,9 @@ export default function ExcludeInput({ onChange }) {
           <div className={css.tooltip}>
             <div>What is this for?</div>
             <div>
-              If your using transport ports to go mine steel/component outposts,
-              you don{"'"}t need to bring those materials with you since you can
-              use what you mine to go back home.
+              If you{`'`}re using transport ports to mine steel/component
+              outposts, you don{"'"}t need to bring those materials with you
+              since you can use what you mine to get back home.
             </div>
           </div>
         </span>

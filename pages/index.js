@@ -73,20 +73,20 @@ export default function App() {
             <div className={css.takeThis}>
               This is what you{"'"}ll need to take with you on your way there...
             </div>
-            <div title={`${distance} * 2.25 * ${tripsBack} = ${usedFuel}`}>
+            <div title={`${distance} * 2.25 * ${tripsBack} = ${usedFuel} chemfuel`}>
               Fuel: {usedFuel}{" "}
               <span className={css.offsetIcon}><Image src="/chemfuel.webp" alt={`${usedFuel} Chemfuel`} width={21} height={21} /></span>
             </div>
-            <div title={`50 + ${tripsBack} * 60 = ${usedSteel}`}>
+            <div title={`50 + 60 * ${tripsBack} = ${usedSteel} steel`}>
               Steel: {usedSteel}{" "}
               <span className={css.offsetIcon}><Image src="/steel.webp" alt={`${usedSteel} Steel`} width={21} height={21} className={css.offsetIcon} /></span>
             </div>
-            <div title={`1 + ${tripsBack} = ${usedComponents}`}>
+            <div title={`1 + ${tripsBack} = ${usedComponents} components`}>
               Components: {usedComponents}
               <span className={css.offsetIcon}><Image src="/component.webp" alt={`${usedComponents} Component`} width={21} height={21} className={css.offsetIcon} /></span>
             </div>
             <div
-              title={`${usedFuel} * 2.3 + ${usedSteel} * 1.9 + ${usedComponents} * 32 = ${usedSilver}`}
+              title={`${usedFuel} * 2.3 + ${usedSteel} * 1.9 + ${usedComponents} * 32 = ${usedSilver} silver`}
             >
               Total money spent: {usedSilver} silver{" "}
               <span className={css.offsetIcon}><Image src="/silver.webp" alt={`${usedSilver} Silver`} width={21} height={21} className={css.offsetIcon} /></span>
