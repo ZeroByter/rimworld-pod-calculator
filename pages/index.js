@@ -1,8 +1,9 @@
 import { useState } from "react";
-import css from "./App.module.scss";
-import ExcludeInput from "./excludeInput";
-import Input from "./input";
-import InputPanel from "./inputPanel";
+import Image from "next/image";
+import css from "./index.module.scss";
+import ExcludeInput from "../components/excludeInput";
+import Input from "../components/input";
+import InputPanel from "../components/inputPanel";
 
 export default function App() {
   const [distance, setDistance] = useState(13);
@@ -70,31 +71,31 @@ export default function App() {
           </div>
           <div className={css.resultsPanel}>
             <div className={css.takeThis}>
-              This is what you'll need to take with you on your way there...
+              This is what you{"'"}ll need to take with you on your way there...
             </div>
             <div title={`${distance} * 2.25 * ${tripsBack} = ${usedFuel}`}>
               Fuel: {usedFuel}{" "}
-              <img src="/chemfuel.webp" alt={`${usedFuel} Chemfuel`} />
+              <span className={css.offsetIcon}><Image src="/chemfuel.webp" alt={`${usedFuel} Chemfuel`} width={21} height={21} /></span>
             </div>
             <div title={`50 + ${tripsBack} * 60 = ${usedSteel}`}>
               Steel: {usedSteel}{" "}
-              <img src="/steel.webp" alt={`${usedSteel} Steel`} />
+              <span className={css.offsetIcon}><Image src="/steel.webp" alt={`${usedSteel} Steel`} width={21} height={21} className={css.offsetIcon} /></span>
             </div>
             <div title={`1 + ${tripsBack} = ${usedComponents}`}>
               Components: {usedComponents}
-              <img src="/component.webp" alt={`${usedComponents} Component`} />
+              <span className={css.offsetIcon}><Image src="/component.webp" alt={`${usedComponents} Component`} width={21} height={21} className={css.offsetIcon} /></span>
             </div>
             <div
               title={`${usedFuel} * 2.3 + ${usedSteel} * 1.9 + ${usedComponents} * 32 = ${usedSilver}`}
             >
               Total money spent: {usedSilver} silver{" "}
-              <img src="/silver.webp" alt={`${usedSilver} Silver`} />
+              <span className={css.offsetIcon}><Image src="/silver.webp" alt={`${usedSilver} Silver`} width={21} height={21} className={css.offsetIcon} /></span>
             </div>
             <div className={css.spacer}></div>
             <div className={css.credits}>By ZeroByter! With {"<3"}</div>
           </div>
-        </div>
-      </div>
-    </div>
+        </div >
+      </div >
+    </div >
   );
 }

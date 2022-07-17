@@ -44,12 +44,8 @@
       border: 3px solid transparent;
 
       .crossedOut {
-        width: 0px;
         position: absolute;
-      }
-
-      img {
-        height: 32px;
+        z-index: 1;
       }
 
       &[data-selected="true"] {

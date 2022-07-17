@@ -5,12 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("/public/background.webp");
+  background-image: url("/background.webp");
   background-repeat: no-repeat;
   background-color: #141a1f;
   background-position: center;
   background-size: fill;
   width: 100vw;
   height: 100vh;
-  cursor: url("/public/cursor.webp"), auto;
+  cursor: url("/cursor.webp"), auto;
 }
