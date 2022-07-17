@@ -1,0 +1,18 @@
+.root {
+  border: 1px solid #606060;
+  background: #363636;
+  padding: 6px 4px;
+
+  &:hover {
+    border-color: #707070;
+    background: #4A4A4A;
+  }
+
+  &:active,
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    border-color: #938160;
+    background: #524736;
+  }
+}

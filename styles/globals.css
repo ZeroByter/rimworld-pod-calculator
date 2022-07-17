@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("/background.webp");
+  background-repeat: no-repeat;
+  background-color: #141a1f;
+  background-position: center;
+  background-size: fill;
+  width: 100vw;
+  height: 100vh;
+  cursor: url("/cursor.webp"), auto;
+}
