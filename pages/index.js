@@ -10,7 +10,8 @@ export default function App() {
   const [tripsBack, setTripsBack] = useState(4);
   const [excludeValue, setExcludeValue] = useState(0);
 
-  const usedFuel = Math.round(distance * 2.25 * tripsBack);
+  const usedFuelOneTrip = Math.round(distance * 2.25)
+  const usedFuel = usedFuelOneTrip * tripsBack;
   let usedSteel = 50 + tripsBack * 60;
   let usedComponents = 1 + tripsBack;
 
@@ -74,7 +75,7 @@ export default function App() {
               This is what you{"'"}ll need to take with you on your way there...
             </div>
             <div title={`${distance} * 2.25 * ${tripsBack} = ${usedFuel} chemfuel`}>
-              Fuel: {usedFuel}{" "}
+              Fuel: {usedFuel} ({usedFuelOneTrip}){" "}
               <span className={css.offsetIcon}><Image src="/chemfuel.webp" alt={`${usedFuel} Chemfuel`} width={21} height={21} /></span>
             </div>
             <div title={`50 + 60 * ${tripsBack} = ${usedSteel} steel`}>
