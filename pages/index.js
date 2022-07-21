@@ -10,7 +10,7 @@ export default function App() {
   const [tripsBack, setTripsBack] = useState(4);
   const [excludeValue, setExcludeValue] = useState(0);
 
-  const usedFuelOneTrip = Math.round(distance * 2.25)
+  const usedFuelOneTrip = Math.ceil(distance * 2.25)
   const usedFuel = usedFuelOneTrip * tripsBack;
   let usedSteel = 50 + tripsBack * 60;
   let usedComponents = 1 + tripsBack;
